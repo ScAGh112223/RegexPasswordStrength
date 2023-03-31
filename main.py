@@ -15,7 +15,7 @@ def check_strength(i: str):
 Uppercase Letters: {matches[1]}
 Numbers: {matches[2]}
 Special characters: {matches[3]}
-More than 8 characters: {matches[4]}''', end="\r\r\r\r\r")
+More than 8 characters: {matches[4]}''', end="\r", flush=True)
 
 liveStr = ""
 while True: 
