@@ -27,8 +27,7 @@ if (__name__ == "__main__"): # Only display user interface if file is not being 
   while True: # Endless Loop
       char = getch() # Wait for and get character from terminal
       if(to_byteStr(char) == enter_code): break # if user presses enter key, exit
-      if(to_byteStr(char) == backspace_code): # if user presses backspace
-          liveStr = liveStr[:-1] # Remove last character of string(currently buggy)
+      if(to_byteStr(char) == backspace_code): liveStr = "" # If user presses backspace, reset input string as i couldn't get removing just one character to work without major bugs
 
       liveStr += decode(char) # Append latest character to input string
       check_strength(liveStr) # Generate and show password strength report
