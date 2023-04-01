@@ -19,8 +19,7 @@ Uppercase Letters: {matches[1]}
 Numbers: {matches[2]}
 Special characters: {matches[3]}
 More than 8 characters: {matches[4]}
-{i}
-{i[-1]}''', flush=True)
+{i}''', flush=True)
 
 if (__name__ == "__main__"): # Only display user interface if file is not being used as a module
   liveStr = "" # Initialize input string
