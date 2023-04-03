@@ -25,7 +25,7 @@ match platform.system():
         clear_screen = lambda: os.system("cls") # Clearn screen command for windows
         to_byteStr = lambda i: i # Dummy to byte string function as msvcrt.getch already returns bytes
 
-        backspace_code = b"\r" # Return carriage(backspace) in bytes
-        enter_code = b"\x08" # Byte code for enter
+        backspace_code = b"\x08" # Return carriage(backspace) in bytes
+        enter_code = b"\r" # Byte code for enter
 
         __all__.extend(["getch", "clear_screen", "decode", "to_byteStr", "backspace_code", "enter_code"]) # Add all variables to __all__
