@@ -9,7 +9,7 @@ Simply run `__*python main.py*__` and the script will install all dependencies a
 ### Usage as module
 Put the `\__init.py__` file and `main.py` file in your project put this line in your imports:
 
-*`from main import check_strength`*
+__`from main import check_strength`__
 
 Now you can pass your password into that function and something like [1,0,0,0,0] will be returned.
 Each number in this list represents a test:
