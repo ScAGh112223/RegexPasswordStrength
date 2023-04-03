@@ -4,10 +4,10 @@
 __This can be used as a script or a module.__
 
 ### Usage as Script
-Simply run `__*python main.py*__` and the script will install all dependencies and run
+Simply run __`python main.py`__ and the script will install all dependencies and run
 
 ### Usage as module
-Put the `\__init.py__` file and `main.py` file in your project put this line in your imports:
+Put the __`__init.py__`__ file and __`main.py`__ file in your project put this line in your imports:
 
 __`from main import check_strength`__
 
