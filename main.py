@@ -3,7 +3,7 @@ from __init__ import * # Initializer script that imports modules and defined OS-
 # Function that does the regex matching to determine password strength
 def check_strength(i: str):
   # Patterns to detect lowercase and uppercase alphabets, numbers, special characters as well as if the string is longer than 8 characters
-  patterns = ["([a-z])", "([A-Z])","([0-9])",r'''([!\@#\$%\^&\*\(\)~`\-\_=\+\[\{\]\}\|;:'",>/\?])\\<>,.''', "(.{9,})"]
+  patterns = ["([a-z])", "([A-Z])","([0-9])",r'''([!\@#\$%\^&\*\(\)~`\-\_=\+\[\{\]\}\|;:'",<>/\.\?\\])''', "(.{9,})"]
   matches = [] # Initialize list that shows matches
   
   for p in patterns: # Loop over strength determination criteria patterns
@@ -30,3 +30,4 @@ if (__name__ == "__main__"): # Only display user interface if file is not being 
 
       liveStr += decode(char) # Append latest character to input string
       check_strength(liveStr) # Generate and show password strength report
+      liveStr = ""
