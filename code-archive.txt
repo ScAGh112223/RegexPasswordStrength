@@ -1,5 +1,0 @@
-print(f"Lowercase Letters: {matches[0]}", end="\r")
-print(f"Uppercase Letters: {matches[1]}", end="\r")
-print(f"Numbers: {matches[2]}", end="\r")
-print(f"Special characters: {matches[3]}", end="\r")
-print(f"More than 8 characters: {matches[4]}", end="\r")
