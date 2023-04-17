@@ -19,6 +19,7 @@ Uppercase Letters: {matches[1]}
 Numbers: {matches[2]}
 Special characters: {matches[3]}
 More than 8 characters: {matches[4]}
+Rating: {sum([1 if x=="✔️" else 0 for x in matches])}/5
 {i}''', flush=True)
 
 if (__name__ == "__main__"): # Only display user interface if file is not being used as a module
@@ -30,4 +31,3 @@ if (__name__ == "__main__"): # Only display user interface if file is not being 
 
       liveStr += decode(char) # Append latest character to input string
       check_strength(liveStr) # Generate and show password strength report
-      liveStr = ""
